@@ -1,0 +1,10 @@
+apiVersion: v1  # версия API для Pod. 
+kind: Pod       # создаём Pod
+metadata:
+  name: hello-world # имя Pod'а 
+spec:
+  containers:
+  - name: echoserver
+    image: gcr.io/kubernetes-e2e-test-images/echoserver:2.2 # образ (возвразает информацию о запросах)
+    ports:
+    - containerPort: 8080 #орт, на котором приложение слушает внутри контейнера
