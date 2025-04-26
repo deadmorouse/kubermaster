@@ -22,7 +22,8 @@
 
 2. Проверка состояния пода до создания сервиса  ![kube3-9-init](https://github.com/user-attachments/assets/de9b3438-d2f1-4d1f-bf6c-b24c1ff46b99)  
 
-3. Создание и запуск Service  ![kube3-11-0-servicein](https://github.com/user-attachments/assets/1e027e73-2ba5-45e3-b5a1-9dbc694d02c6)  
+3. Создание и запуск Service  
+![kube3-11-0-servicein](https://github.com/user-attachments/assets/1e027e73-2ba5-45e3-b5a1-9dbc694d02c6)  
 
 
 4. Проверка состояния пода после создания сервиса ![kube3-11-checkinit](https://github.com/user-attachments/assets/6ec42eb3-825a-4f71-b438-409a32a300b9)  
