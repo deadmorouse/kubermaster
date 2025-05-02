@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-https
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx-https
+  template:
+    metadata:
+      labels:
+        app: nginx-https
+    spec:
+      containers:
+      - name: nginx
+        image: nginx
+        volumeMounts:
+        - name: html
+          mountPath: /usr/share/nginx/html/index.html
+          subPath: index.html
+      volumes:
+      - name: html
+        configMap:
+          name: html-config
+
